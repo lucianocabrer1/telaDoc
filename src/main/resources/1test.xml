@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke" parallel="tests" thread-count="1" verbose="10">
+    <listeners>
+        <listener class-name="tests.WebDriverListener"/>
+        <!--listener class-name="commons.listeners.TestListener"/-->
+    </listeners>
+
+    <test name="users">
+        <classes>
+            <class name="tests.app.deleteUser"></class>
+        </classes>
+    </test>
+
+</suite>
